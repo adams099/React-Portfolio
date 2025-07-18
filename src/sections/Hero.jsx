@@ -51,8 +51,8 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Adam Musyafa, a developer based in Jakarta with a passion for
-              code.
+              Hai, saya Adam Musyafa, seorang developer yang berbasis di Jakarta<br />
+              dengan semangat tinggi dalam dunia pemrograman.
             </p>
 
             <Button

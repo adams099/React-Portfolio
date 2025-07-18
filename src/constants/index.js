@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 5, suffix: "+", label: "Teknologi Telah Dikuasai" },
+  { value: 3, suffix: "", label: "Stack Utama yang Dikuasai" },
+  { value: 6, suffix: "", label: "Aplikasi/Website Pernah Dibangun" },
+  { value: 2, suffix: "+", label: "Tahun Pengalaman"}
 ];
 
 const logoIconsList = [
@@ -74,20 +74,36 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Problem Solving",
+    desc: "Terbiasa menghadapi tantangan teknis dengan pendekatan logis dan solusi efisien.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Fast Learner",
+    desc: "Cepat beradaptasi dengan teknologi baru dan mampu mempelajari framework secara mandiri.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Team Collaboration",
+    desc: "Mampu bekerja sama dalam tim lintas divisi dan menjaga komunikasi yang efektif.",
+  },
+  {
+    imgPath: "/images/bug.png",
+    title: "Debugging & Troubleshooting",
+    desc: "Cekatan dalam mengidentifikasi dan memperbaiki bug yang kompleks di berbagai lingkungan pengembangan.",
+  },
+  {
+    imgPath: "/images/refresh.png",
+    title: "Continuous Improvement",
+    desc: "Selalu terbuka terhadap feedback dan berkomitmen untuk terus meningkatkan kualitas kerja.",
+  },
+  {
+    imgPath: "/images/detail.png",
+    title: "Detail Oriented",
+    desc: "Fokus pada ketelitian dan kualitas dalam setiap proses pengembangan aplikasi.",
   },
 ];
+
 
 const techStackImgs = [
   {
@@ -147,39 +163,43 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adam brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review:
+      "Selama mengikuti program bootcamp CodeHive di Politeknik Gajah Tunggal selama enam bulan, saya belajar dan mengerjakan berbagai proyek web, mobile, dan machine learning. Program ini memperkuat kemampuan saya dalam pengembangan end-to-end.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Full Stack Trainee Developer",
+    date: "September 2022 – Februari 2022",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Mengembangkan aplikasi web dengan Laravel, CodeIgniter 4, dan Vue.js.",
+      "Membangun backend menggunakan Spring Boot dan database MySQL.",
+      "Membuat aplikasi mobile menggunakan Flutter dan Firebase.",
+      "Menerapkan model machine learning di Jupyter Notebook menggunakan Anaconda untuk klasifikasi gambar.",
     ],
   },
   {
-    review: "Adam’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review:
+      "Saya menjalani internship sebagai Full Stack Developer di GPay Digital Asia, di mana saya terlibat langsung dalam pengembangan dan pemeliharaan sistem backend dan frontend yang digunakan untuk keperluan internal.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Full Stack Developer Intern",
+    date: "Maret 2023 – September 2023",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Membangun dan mengelola sistem internal dengan Native PHP dan Slim Framework.",
+      "Mengembangkan dan mengintegrasikan API menggunakan Spring Boot dan SQL.",
+      "Berkoordinasi dengan tim dalam proses debugging, testing, dan deployment.",
     ],
   },
   {
-    review: "Adam’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review:
+      "Saat ini saya bekerja di Gajah Tunggal sebagai staf maintenance. Fokus saya adalah memastikan sistem PABX dan perangkat kerja tetap berjalan optimal, serta memberikan solusi cepat untuk kendala teknis di lingkungan kerja.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Maintenance & Support Staff",
+    date: "Oktober 2023 – Sekarang",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Melakukan perawatan dan perbaikan perangkat jaringan seperti kabel LAN dan perangkat komunikasi PABX.",
+      "Melakukan troubleshooting perangkat telepon dan jaringan di berbagai area kerja.",
+      "Memberikan dukungan teknis untuk kebutuhan operasional harian dan permintaan user secara general.",
     ],
   },
 ];
@@ -201,48 +221,49 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Dimas Santoso",
+    mentions: "@dimas.codehive",
     review:
-      "I can’t say enough good things about Adam. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Adam memiliki semangat belajar yang luar biasa. Ia mampu memahami teknologi kompleks dalam waktu singkat dan selalu antusias saat menyelesaikan tantangan teknis selama bootcamp.",
     imgPath: "/images/client1.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Reza Pratama",
+    mentions: "@rezapm",
     review:
-      "Working with Adam was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
-  },
-  {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adam was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adam's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adam is the ideal partner.",
+      "Selama magang di GPay, Adam menunjukkan inisiatif tinggi dan mampu menguasai alur sistem kami dengan cepat. Hasil kerjanya rapi dan bisa diandalkan, bahkan dalam proyek yang memiliki banyak dependency.",
     imgPath: "/images/client2.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Laras Putri",
+    mentions: "@larasputri",
     review:
-      "Adam was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+      "Adam adalah rekan kerja yang selalu sigap. Setiap ada kendala teknis di kantor, ia dengan cepat melakukan identifikasi dan penanganan. Komitmennya terhadap kualitas dan ketepatan waktu patut diacungi jempol.",
+    imgPath: "/images/client3.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Indra Maulana",
+    mentions: "@indra.ml",
     review:
-      "Adam’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Saya sempat bekerja bersama Adam dalam proyek machine learning. Ia sangat teliti dan cepat memahami konsep-konsep teknis. Hasil model klasifikasi gambarnya sangat akurat dan bisa langsung diterapkan.",
     imgPath: "/images/client4.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Yuni Andriyani",
+    mentions: "@yuniandriyani",
     review:
-      "Adam was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Adam membantu tim kami melakukan integrasi frontend dan backend pada sistem internal. Ia bekerja mandiri dengan dokumentasi yang sangat jelas dan bisa menjelaskan kompleksitas teknis dengan bahasa yang mudah dimengerti.",
+    imgPath: "/images/client5.png",
+  },
+  {
+    name: "Fahmi Ramadhan",
+    mentions: "@fahmir",
+    review:
+      "Saya mengandalkan Adam untuk berbagai tugas teknis di kantor, terutama terkait jaringan dan maintenance. Ia sangat responsif, disiplin, dan dapat dipercaya untuk menyelesaikan masalah tanpa harus diawasi terus-menerus.",
     imgPath: "/images/client6.png",
   },
 ];
+
 
 const socialImgs = [
   {
